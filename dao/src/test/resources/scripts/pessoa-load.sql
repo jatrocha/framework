@@ -1,0 +1,5 @@
+INSERT INTO PIRAS (name) VALUES ('Dummy1');
+INSERT INTO PIRAS (name) VALUES ('Dummy2');
+INSERT INTO PIRAS (name) VALUES ('Dummy3');
+INSERT INTO PIRAS (name) VALUES ('Dummy4');
+INSERT INTO PIRAS (name) VALUES ('Dummy5');

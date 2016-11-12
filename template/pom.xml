@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>template</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Framework - Template</name>
+	<description>Contratos de negocio para o framework.</description>
+	<url>http://www.cygnus-x1.com.br/projects/framework</url>
+
+	<parent>
+		<groupId>framework</groupId>
+		<artifactId>framework</artifactId>
+		<version>1.4.0-SNAPSHOT</version>
+	</parent>
+
+	<issueManagement>
+		<system>Mantis</system>
+		<url>http://agile.cygnus-x1.com.br/mantis</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://ic-local/jenkins/view/Framework/</url>
+	</ciManagement>
+
+	<scm>
+		<connection>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/template/</connection>
+		<developerConnection>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/template/</developerConnection>
+		<url>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/template/</url>
+	</scm>
+
+	<distributionManagement>
+
+		<repository>
+			<id>Releases</id>
+			<name>Maven Repository - Releases</name>
+			<url>http://ic-local/nexus/content/repositories/releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>Snapshots</id>
+			<name>Maven Repository - Snapshots</name>
+			<url>http://ic-local/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+
+	</distributionManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.1.6</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>

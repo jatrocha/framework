@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>dao</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Framework - Dao</name>
+	<description>Abstracao e wrappers para acesso e manipulacao de dados utilizando o JPA (Hibernate) com varios servidores de banco de dados.</description>
+	<url>http://www.cygnus-x1.com.br/projects/framework</url>
+
+	<parent>
+		<groupId>framework</groupId>
+		<artifactId>framework</artifactId>
+		<version>1.4.0-SNAPSHOT</version>
+	</parent>
+
+	<issueManagement>
+		<system>Mantis</system>
+		<url>http://agile.cygnus-x1.com.br/mantis</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://ic-local/view/Cygnus-X1/</url>
+	</ciManagement>
+
+	<distributionManagement>
+
+		<repository>
+			<id>Releases</id>
+			<name>Maven Repository - Releases</name>
+			<url>http://ic-local/nexus/content/repositories/releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>Snapshots</id>
+			<name>Maven Repository - Snapshots</name>
+			<url>http://ic-local/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+
+	</distributionManagement>
+
+	<repositories>
+
+		<repository>
+			<id>Releases</id>
+			<name>Maven Repository - Releases</name>
+			<url>http://ic-local/nexus/content/repositories/releases</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+			<releases>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+		</repository>
+
+		<repository>
+			<id>Snapshots</id>
+			<name>Maven Repository - Snapshots</name>
+			<url>http://ic-local/nexus/content/repositories/snapshots</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+			<releases>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+		</repository>
+
+	</repositories>
+
+	<scm>
+		<connection>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/dao/</connection>
+		<developerConnection>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/dao/</developerConnection>
+		<url>scm:svn:http://ic-local/svn/framework/Construction/LIB/java/trunk/dao/</url>
+	</scm>
+
+	<dependencies>
+
+		<!-- Framework -->
+		<dependency>
+			<groupId>framework</groupId>
+			<artifactId>base</artifactId>
+			<version>1.4.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>framework</groupId>
+			<artifactId>template</artifactId>
+			<version>0.8.1-SNAPSHOT</version>
+		</dependency>
+		<!-- Framework -->
+
+		<!-- Databases -->
+
+
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+		</dependency>
+		<!-- Databases -->
+
+	</dependencies>
+
+</project>
